@@ -1,12 +1,18 @@
 import requests
 import json
 
+keys = {
+    'рубль': 'RUB',
+    'евро': 'EUR',
+    'доллар': 'USD',
+}
+
 class ConvertionException(Exception):
     pass
 
 class Converter:
     @staticmethod
-    def convert(quote: str, base: str, amount: str):
+    def exchange(quote: str, base: str, amount: str):
         if quote == base:
             raise ConvertionException(f'Введена одинаковая валюта {base}')
 
