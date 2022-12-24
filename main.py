@@ -1,3 +1,6 @@
+#https://t.me/ExchangeTelebot
+#name - TelebotExchange
+
 import telebot
 from config import keys, TOKEN
 from extensions import ConvertionException, Converter
